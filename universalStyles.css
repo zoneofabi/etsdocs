@@ -17,43 +17,34 @@ body {
     flex-direction: row;
     justify-content: space-around;
     border-radius: 20% 20% 20% 20%;
-    background: linear-gradient(180deg, rgba(55, 0, 175, 0.545) 7%, rgba(78, 78, 78, 0.548) 48%, rgba(171, 0, 182, 0.23104579722514005) 98%);
+    background: radial-gradient(circle, rgba(23, 0, 200, 1) 8%, rgba(89, 0, 255, 1) 47%, rgba(3, 0, 67, 1) 94%);
+
 }
 
 .navbar a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: bold;
-    color: whitesmoke;
+    color: rgb(217, 255, 0);
    /* background-color: #410000; */
-   background: linear-gradient(120deg, rgba(117, 117, 123, 0.847) 16%, rgba(107, 107, 107, 0.597) 34%, rgba(90, 89, 89, 0.386) 92%);
-    padding: 5px;
+   background: rgb(161, 7, 25);
+   white-space: nowrap;
+   font-style: italic;
+   padding: 5px;
     text-decoration: none;
-    border-radius: 8% 8% 8% 8%;
+    border-radius: 14% 20% 14% 20%;
     text-align: center;
     border: 2px solid rgba(59, 59, 59, 0.744);
 }
 
+  .teleportButton {
+      width: 15%;
+      bottom: 2px solid lawngreen;
+  }
 
 
 
-.navbar a:nth-of-type(1){
-    background: linear-gradient(120deg, rgba(123, 117, 122, 0.847) 16%, rgba(107, 107, 107, 0.597) 34%, rgba(90, 89, 89, 0.386) 92%);
-}
-.navbar a:nth-of-type(2) {
-    background: linear-gradient(120deg, rgba(117, 117, 123, 0.847) 16%, rgba(107, 107, 107, 0.597) 34%, rgba(90, 89, 89, 0.386) 92%);
-}
 
-.navbar a:nth-of-type(3) {
-    background: linear-gradient(180deg, rgba(117, 117, 123, 0.847) 16%, rgba(107, 107, 107, 0.597) 34%, rgba(90, 89, 89, 0.386) 92%);
-}
 
-.navbar a:nth-of-type(4) {
-    background: linear-gradient(120deg, rgba(90, 89, 89, 0.386) 16%, rgba(107, 107, 107, 0.597) 34%, rgba(117, 117, 123, 0.847) 92%);
-}
-
-.navbar a:nth-of-type(5) {
-    background: linear-gradient(120deg, rgba(90, 89, 89, 0.386) 16%, rgba(107, 107, 107, 0.597) 34%, rgba(117, 117, 123, 0.847) 92%);
-}
 
 
 
@@ -95,6 +86,68 @@ body {
         width: 7%;
 
     }
+    
+        .navbar a:hover{
+            background-color: chocolate;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover p{
+            opacity: 100%;
+        }
+
+
+
+    .navbar a:nth-of-type(3){
+        width: 20%;
+        background-color: rgb(200, 0, 0);
+        color: orange;
+       
+          
+    }
+
+        .navbar a:nth-of-type(3) p{
+            background-color: black;
+           
+        }
+
+        .navbar a:nth-of-type(3):hover {
+            width: 20%;
+            background-color: rgb(19, 136, 87);
+            opacity: 100%;
+                    
+            animation-name: teleportButtonAnim ;
+            animation-duration: 2s;
+            animation-fill-mode: forwards ;
+            animation-iteration-count: infinite ;
+            animation-timing-function: linear;
+                
+                    
+        }
+                .navbar a:nth-of-type(3):hover p {
+                    opacity: 100%;
+
+                }
+
+        @keyframes teleportButtonAnim{
+
+            0%{
+                box-shadow: 2px 2px 5px lawngreen, -2px -2px 5px lawngreen;
+            }
+
+            50%{
+                box-shadow: 0px 0px 0px lawngreen, 0px 0px 0px lawngreen;
+            }
+
+            100%{
+                box-shadow: 2px 2px 5px lawngreen, -2px -2px 5px lawngreen;
+            }
+            
+        }
+
+        
+
+  
 
 
 

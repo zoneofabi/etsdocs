@@ -223,12 +223,23 @@
     </section>
 
     <nav class="navbar">
-      <a href=""><p>Home</p></a>
-      <a href=""><p>VFX</p></a>
-      <a href=""><p>Apps</p></a>
-      <a href=""><p>Writing</p></a>
-      <a href=""><p>Contact</p></a>
-
+      <a href="https://zoneofabi.github.io/contact/">
+        <p>Contact</p>
+      </a>
+      <a href="https://zoneofabi.github.io/art/">
+        <p>VFX</p>
+      </a>
+      <a class="teleportButton" href="https://zoneofabi.github.io/home/">
+        <p>Teleport To Home Base</p>
+      </a>
+      <a href="https://zoneofabi.github.io/apps/">
+        <p>Apps</p>
+      </a>
+      <a href="https://zoneofabi.github.io/writing/">
+        <p>Writing</p>
+      </a>
+    
+    
     </nav>
   </div>
 
@@ -237,6 +248,8 @@
   <div class="pageContentContainer">
 
     <h1 class="mainPageTitle">ETS (Extraterestrial Sightings) Docs</h1>
+
+   
     
     <section class="categorySection">
 
@@ -286,6 +299,9 @@
         
 
         </article>
+
+
+        
 
 
         <article class="docArticle">
@@ -467,10 +483,90 @@
           
           
           
+         
+         
+         
           </article>
+
+
+
+          
 
       </div>
 
+
+      <section class="LRAFSectionDemoPortal">
+        <h3>Live demonstration of the LRAF (Location Researcher And Formatter)</h3>
+        <h3>Follow the steps outlined in the images below before trying the app</h3>
+        <h3>Link to app: <a style="color: rgb(255, 132, 0);" href="https://etsightings.000webhostapp.com/Sightings/Pages/sightings.php">https://etsightings.000webhostapp.com/Sightings/Pages/sightings.php</a></h3>
+      
+        <div class="LRAFSectionDemoPortal_DemoScreenshotsGallery">
+
+          <div class="LRAF_DemoScreenshot_ImageCont">
+            <img src="./LRAF_Demo_Screenshots/2.png" alt="">
+          </div>
+
+          <div class="LRAF_DemoScreenshot_ImageCont">
+            <img src="./LRAF_Demo_Screenshots/4.png" alt="">
+          </div>
+        </div>
+
+
+        <div class="LRAFSectionDemoPortal_DemoScreenshotsGallery">
+        
+          <div class="LRAF_DemoScreenshot_ImageCont">
+            <img src="./LRAF_Demo_Screenshots/5.png" alt="">
+          </div>
+        
+          <div class="LRAF_DemoScreenshot_ImageCont">
+            <img src="./LRAF_Demo_Screenshots/55.png" alt="">
+          </div>
+        </div>
+
+        <div class="LRAFSectionDemoPortal_DemoScreenshotsGallery">
+        
+          <div class="LRAF_DemoScreenshot_ImageCont">
+            <img src="./LRAF_Demo_Screenshots/6.png" alt="">
+          </div>
+        
+       
+        </div>
+
+        
+        
+        <h3>Context of the application</h3>
+      
+        <p>The LRAF (Location Researcher And Formatter) is a PHP application that I built which analyzes a set of raw strings (that ideally should represent location names) 
+          and figures out the organizational hierarchy between those locations. Example: If you input 3 strings into it - "Ontario", "Canada", "Toronto" (in any random order), it will 
+          figure out the geographical organization (Canada (Country) > Ontario (Province) > Toronto (City)) and create that hierarchy.
+        </p>
+
+        <p>
+          The point of this application is to assist users with finding out the proper order and name of a location before finalizing it for entry into the database.
+        </p>
+
+        <p>
+          It works by querying Overpass API (Which is a geographic information system) with the location names, and gathers important data about those locations such as administrative level, 
+          latitude, longitude, and description. It then analyzes all this data for all the location strings and then relates the locations to each other.
+          It is important to note that there are multiple places in the world which can have the same name. Eg: London. Are we talking about London, Ontario, Canada or 
+          London, England? The LRAF will make this decision based on what the other locations in the set are.
+        </p>
+
+        <p>
+          It is currently in a rough stage but you can still go ahead and exeriment with it to see what comes out! Please refer to the images above to know how to access the 
+          form and submit the data. To start off, I recommend typing "Canada" in the country field, "Ontario" in the state field, and "Toronto" in the city field. You can try out other locations in other countries too.
+          Please note that it will take the app some time to return the data. Give it a good 20-30 seconds to work.
+        </p>
+
+
+
+        <p>Currently it's in a rough stage but the app is able to parse through random location strings and identify the hierarchy between them!</p>
+
+        <p>Please refer to the instructions (and demo video) to find out how to test the app for yourself.</p>
+
+        <p>Go ahead and try inputting various country, state, city strings into it and see what comes out!</p>
+      
+      </section>
 
     
 
